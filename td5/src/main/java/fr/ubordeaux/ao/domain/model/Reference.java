@@ -1,7 +1,6 @@
 package fr.ubordeaux.ao.domain.model;
 
 import java.util.Objects;
-
 import fr.ubordeaux.ao.domain.exception.ReferenceManagementException;
 import fr.ubordeaux.ao.domain.type.Price;
 
@@ -21,6 +20,7 @@ public class Reference {
 
     private void setReferenceId(String id) {
         if (id == null) {
+
             throw new ReferenceManagementException(
             "cannot create reference with null id");
         }
